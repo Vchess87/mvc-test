@@ -29,5 +29,11 @@ namespace WebApplication3.Tests
         {
             Assert.IsTrue(true);
         }
+
+        [TestMethod]
+        public void TestMethod5()
+        {
+            Assert.IsTrue(true);
+        }
     }
 }
