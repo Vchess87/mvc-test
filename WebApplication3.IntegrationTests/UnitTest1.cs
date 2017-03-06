@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using WebApplication3.Models;
 
 namespace WebApplication3.IntegrationTests
 {
@@ -9,7 +11,9 @@ namespace WebApplication3.IntegrationTests
         [TestMethod]
         public void TestMethod1()
         {
-            Assert.IsTrue(true);
+            ApplicationDbContext context = new ApplicationDbContext();
+
+            Assert.IsTrue(context.Users.Count() == 1);
         }
     }
 }
